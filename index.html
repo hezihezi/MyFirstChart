@@ -541,13 +541,13 @@
       	//use a for loop to make an array of arrays out of relevant JSON data    	
       	for(var i=0;i<JSONFredData.observations.length;i++){
       		
-      		var itemArray = [];
+      		var smallArray = [];
       		
       		var FRED1 = JSONFredData.observations[i];
       		
       		smallArray.push(FRED1.date);
       	    smallArray.push(Number(FRED1.value));
-      		
+      	
       	bigArray.push(smallArray);
       	
       	}
@@ -559,7 +559,7 @@
         data.addRows(bigArray);
 
         // Set chart options
-        var options = {'title':'How Much Pizza Did Seres Eat Last Night',
+        var options = {'title':'How Much Pizza Did Seres Eat Over the Years',
                        'width':1000,
                        'height':800};
 
