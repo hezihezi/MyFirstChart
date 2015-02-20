@@ -546,7 +546,7 @@
       		var FRED1 = JSONFredData.observations[i];
       		
       		smallArray.push(FRED1.date);
-      	    smallArray.push(FRED1.value);
+      	    smallArray.push(Number(FRED1.value));
       		
       	bigArray.push(smallArray);
       	
