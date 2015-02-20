@@ -536,6 +536,19 @@
       // draws it.
       function drawChart() {
       	
+      	//use a for loop to make an array of arrays out of relevant JSON data    	
+      	for(var i=0;i<JSONFredData.observations.length;i++){
+      		
+      		var itemArray = [];
+      		
+      		var FRED1 = JSONFredData.observations[i];
+      		
+      		itemArray.push(FRED1.date);
+      		itemArray.push(FRED1.value);
+      		
+      	
+      	}
+      	
         // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
